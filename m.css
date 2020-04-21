@@ -3,7 +3,13 @@
 	list-style:none; 
 	padding:0; margin:0; 
 	font-family: 'Noto Sans KR', sans-serif;}
-body{ width: 100%; font-size: 16px; letter-spacing:-0.2px; }
+body{
+/*
+    overflow-x:hidden; 
+    width: 100vw; 
+*/
+    font-size: 16px; 
+    letter-spacing:-0.2px; }
 .wrap { 
 	padding-top: 40px; 
 	padding-bottom: 40px; 
@@ -41,8 +47,12 @@ nav li {
 	position:relative;}
 .sns span img{ 
 	width: 30px; } 
-.main_banner {width: 100%;}
-.main_banner img{ width: 100%}
+/* .main_banner {width: 100%;}
+.main_banner img{ width: 100%} */
+.head_banner { 
+	width: 100%;
+	position:relative;
+}
 .board_contain .wrap {
 	width: 1300px; margin: auto;
 	display: flex;
@@ -107,11 +117,14 @@ nav li {
 	background-color:#181d61;
 	color: white;
 }
-
+.sec1 { height: 100vh; }
 
 .sec2 {
-	background-image: url('../../img/service_bg.jpg');
+	background-image: url('../../img/service_bg2.jpg');
 	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 	}
 .sec2 h3, .sec3 h3, .sec4 h3, .sec5 h3 {   display: inline; padding-right: 20px;}
 .sec4 h3 { padding-top: 30px; }
@@ -157,7 +170,7 @@ nav li {
 	transition: 0.5s;
 	}
 .sec3 .sol:hover > img{
-	transform: scale(1.1) rotate(3deg);
+	transform: scale(1.1) rotate(1deg);
 }
 .sec3 .sol_txt{
 	position: absolute;
@@ -296,15 +309,17 @@ nav li {
 	text-indent: 20px;
 	line-height: 50px;
 	border-radius: 50%;
+
 }
 .sec5 .col2 div:first-child{	
 	font-size: 24px;
 }
 .sec6 {
-	width: 100%;
-	height: 100%;
-	background-image: url('../../img/story_bg.jpg');
+	background-image: url('../../img/story_bg4.jpg');
 	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 	}
 .sec6 .wrap{
 	width: 1150px;
@@ -320,6 +335,10 @@ nav li {
 	color: black;}
 .sec6 .story_box{
 	background: white;
+    cursor:pointer;
+}
+.sec6 .story_box img {
+    transition: 0.5s;
 }
 .sec6 .story_txt{
 	padding: 30px 10px;
@@ -334,6 +353,10 @@ nav li {
 .sec6 .story_txt div:nth-child(3) span{
 	padding: 10px;
 }
+.sec6 .story_box:hover img {
+    opacity: 0.6;
+}
+
 footer { 
 	padding-bottom: 50px;
 	background-color: #4e5462;

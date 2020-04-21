@@ -54,3 +54,18 @@
   </footer>
  </body>
 </html>
+<script>
+$(document).ready(function(){
+	win_w = $(window).width();
+	win_h = $(window).height();
+	console.log(win_w+'/'+win_h);
+	banner_left = (win_w-1300)/2
+	$('.head_banner').css({'left':-banner_left})
+});
+
+
+	
+
+
+
+</script>

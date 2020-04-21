@@ -13,9 +13,9 @@
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"
+  <script src="https://code.jquery.com/jquery-3.5.0.js"
   integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-  crossorigin="anonymous"></script> -->
+  crossorigin="anonymous"></script>
   <title>Document</title>
 
  </head>
@@ -78,14 +78,9 @@
 	</div>
 	
   </header>
-	<div style="position:relative; width: 100%; height: 700px; overflow: hidden;">
+	<div class="head_banner">
 		<?php
 		$banner_code="main_visual"; 
 		include $_SERVER['DOCUMENT_ROOT']."/common/banner/banner_visual.php";
 		?> 
 	</div>
-
- <!--  <div class="main_banner">
-	<img src="img/main03-1.jpg" alt="">
-  </div>
- -->
