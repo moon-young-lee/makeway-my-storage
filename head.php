@@ -11,16 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.5.0.js"
-  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <title>Document</title>
-
  </head>
  <body>
-
   <section class="sec1">
   <header>
 	<img src="img/logo.png" alt="">
@@ -76,11 +70,35 @@
 			<span><img src="img/icon_blog.jpg" alt=""></span>
 		</div>
 	</div>
+	<div class="hamBtn">
+	    <span class="bar1 bar"></span>
+	    <span class="bar2 bar"></span>
+	    <span class="bar3 bar"></span>
+	</div>
 	
   </header>
 	<div class="head_banner">
-		<?php
+        <div class="banner_img">
+               <?php
 		$banner_code="main_visual"; 
 		include $_SERVER['DOCUMENT_ROOT']."/common/banner/banner_visual.php";
-		?> 
-	</div>
+		?>
+        </div>
+        <div class="banner_txt">
+           <div class="ban_txt ban_txt1">
+                <span>MAKEWAY? 메이크웨이!</span>
+                <h1>WEBPROGRAM</h1>
+                <h1 id="ban_2">WEBSOLUTION</h1>
+                <h3>메이크웨이는 웹솔루션·웹프로그램개발 전문업체 입니다.</h3>      
+           </div>
+           <div class="ban_txt ban_txt2">
+                <span>기술력이 강한 메이크웨이!</span>
+                <h1>TECHNICAL</h1>
+                <h1 id="ban_2">SKILLS</h1>
+                <h3>20여년의 노하우를 갖춘 전문개발자의 웹솔루션으로<br>좀 더 쉽게 홈페이지를 관리하세요!</h3>      
+           </div>
+                  
+        </div>
+         
+    </div>
+		
